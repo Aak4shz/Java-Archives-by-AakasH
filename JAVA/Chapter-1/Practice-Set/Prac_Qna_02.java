@@ -5,14 +5,6 @@ public class Prac_Qna_02 {
      public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-       /* System.out.println("Input Tht First Numbers :");
-        int num1 = sc.nextInt();
-        System.out.println("Input The Second Numbers :");
-        int num2 = sc.nextInt();
-        int sum = num1 + num2 ;
-        System.out.println();
-        System.out.println("The sum of Two Numbers is : "+ sum);   */
-
         System.out.print("Input the X number: ");
         int numX = sc.nextInt(); 
         System.out.print("Input the Y number: "); 
@@ -26,3 +18,8 @@ public class Prac_Qna_02 {
         sc.close();
      }
 }
+// Output:
+// Input the X number: 10
+// Input the Y number: 20
+// Input the Z number: 7
+// The sum of three numbers is: 37

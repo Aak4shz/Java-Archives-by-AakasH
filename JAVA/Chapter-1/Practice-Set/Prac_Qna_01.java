@@ -9,3 +9,5 @@ public class Prac_Qna_01 {
         System.out.println("Sum of these numbers : " + sum);
     }
 }
+// Output:
+// Sum of these numbers : 37
