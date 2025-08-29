@@ -1,3 +1,5 @@
+// A Java program to demonstrate the use of local variables...
+
 public class Data_Types_02 {
         public static void main(String[] args) {
         // Calling the Method
