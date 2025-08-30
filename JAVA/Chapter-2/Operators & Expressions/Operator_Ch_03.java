@@ -31,3 +31,7 @@ public class Operator_Ch_03 {
          System.out.println(c);
     }
 }
+/*  OutPut :
+  30
+ -56
+  37   */
