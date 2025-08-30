@@ -1,3 +1,5 @@
+// Declare variables of all primitive data types in Java, assign values, and print them
+
 public class Data_Types_03 {
     public static void main(String[] args) {
         byte b = 100;         // 1 byte
