@@ -20,8 +20,18 @@ public class Operator_Ch_03 {
           * = 12 - 68
           * = -56
           */
-          
+
+        int c = 4 * 5 + 34 / 2 - 6 + 2 * 3;
+        /* = 20 + 34/2 - 6 + 2*3
+         * = 20 + 17 - 6 + 6
+         * = 37
+         */
          System.out.println(a);
          System.out.println(b);
+         System.out.println(c);
     }
 }
+/*  OutPut :
+  30
+ -56
+  37   */
