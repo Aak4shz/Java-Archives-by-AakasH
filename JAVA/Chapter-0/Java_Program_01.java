@@ -1,6 +1,5 @@
 // Simple Java program to demonstrate taking user input and displaying a personalized message.
 
-
 import java.util.Scanner;
 // Give access to Scanner class.
 
