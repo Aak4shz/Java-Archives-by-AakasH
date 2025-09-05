@@ -21,7 +21,7 @@ public class Ch_String_03 {
         String s8 = "Hello \\World";
 
         System.out.println(s1);
-        System.out.println("----------------------");
+        System.out.println("----------------------"); // ignored these lines
         System.out.println(s2);
         System.out.println("----------------------");
         System.out.println(s3);
