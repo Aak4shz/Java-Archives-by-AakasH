@@ -1,4 +1,5 @@
 // Write a java program to replace spaces with underscores.
+
 public class Question_02 {
     public static void main(String[] args) {
         String name = " Aakash Munda ";
