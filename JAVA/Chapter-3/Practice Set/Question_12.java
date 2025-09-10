@@ -3,12 +3,12 @@
 
 public class Question_12 {
     public static void main(String[] args) {
-        String word = "Athena! You will suffer for this betrayal." +
+        String line = "Athena! You will suffer for this betrayal." +
                 "\n I am no slave of fate! I am the Ghost of Sparta… and I will have my revenge!";
-        word = word.toLowerCase();
+        line = line.toLowerCase();
         int[] freq = new int[256];
-        for (int i = 0; i < word.length(); i++) {
-            freq[word.charAt(i)]++;
+        for (int i = 0; i < line.length(); i++) {
+            freq[line.charAt(i)]++;
 
         }
         System.out.println("Duplicate characters are : ");
