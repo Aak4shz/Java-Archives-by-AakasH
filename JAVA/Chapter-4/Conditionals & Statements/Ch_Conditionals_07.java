@@ -15,3 +15,9 @@ public class Ch_Conditionals_07 {
     }
 
 }
+
+/* Nested if Statement ->
+ * The Nested if Statement means writing one if statement inside another if statement.
+ * This is used when you need to check multiple conditions,
+ * and you have to make decisions one after another based on those conditions.
+ */
