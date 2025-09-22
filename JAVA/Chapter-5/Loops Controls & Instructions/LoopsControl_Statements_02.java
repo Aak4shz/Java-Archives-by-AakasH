@@ -9,6 +9,7 @@ public class LoopsControl_Statements_02 {
                 continue; // Skips the rest of the loop when i is 5. 
             }
             System.out.println(i);
+            System.out.println("Hello Sachin Chutmarike !");
         }
 
     }
