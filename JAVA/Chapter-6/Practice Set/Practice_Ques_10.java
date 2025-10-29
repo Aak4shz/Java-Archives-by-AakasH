@@ -3,6 +3,11 @@ public class Practice_Ques_10 {
     public static void main(String[] args) {
 
         int[] numbers = { -10, 0, +5, -38, 23, +18, 0, 17, 0, -9, 89 };
+        System.out.println("Original Array : ");
+        for ( int num : numbers ){
+            System.out.print(num + " ");
+        }
+
         int positiveCount = 0;
         int negativeCount = 0;
         int zeroCount = 0;
@@ -17,7 +22,7 @@ public class Practice_Ques_10 {
             }
 
         }
-        System.out.println("Array Elements : " + numbers.length);
+        System.out.println("\nArray Elements : " + numbers.length);
         System.out.println("Total Zeroes : " + zeroCount);
         System.out.println("Total Positive Numbers : " + positiveCount);
         System.out.println("Total Negative Numbers : " + negativeCount);
