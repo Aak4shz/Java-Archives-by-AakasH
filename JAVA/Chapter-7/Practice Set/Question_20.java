@@ -30,7 +30,7 @@ public class Question_20 {
     static int calculateRectanglePerimeter(int length, int breadth) {
         return 2 * (length + breadth);
     }
-
+    
     // Area of Square or Perimeter
     static int calculateSquareArea(int side) {
         return side * side;
