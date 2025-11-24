@@ -1,4 +1,4 @@
-// Create a Calculator class with method : add(), sub(), mul(), & div().
+// Create a Calculator class with method : add(), sub(), multiply(), & divide().
 
 class Calculator{
     public void add(int a , int b){
@@ -24,6 +24,6 @@ public class Prac_Ques_06 {
         obj.multiply(25, 25);
         obj.divide(75, 5);
         System.out.println();
-        
+
     }
 }
