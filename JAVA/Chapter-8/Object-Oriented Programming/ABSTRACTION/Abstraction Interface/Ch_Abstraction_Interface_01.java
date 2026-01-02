@@ -16,24 +16,77 @@ interface Vehicle {
     }
 
 }
+// ===========Abstract Class ==================
 
-class Bus implements Vehicle {
+abstract class AbstractVehicle implements Vehicle {
 
-    private String name;
-    private int year;
-    private String type;
-    private String color;
-    private double price;
-    private int passenger;
+    protected String name;
+    protected int year;
+    protected String type;
+    protected String color;
+    protected double price;
+    protected int passengerCapacity;
+    protected int passenger;
 
     // Constructors
-    public Bus(String name, int year, String type, String color, double price, int passenger){
+    public AbstractVehicle(String name, int year, String type, String color, double price, int passengerCapacity) {
         this.name = name;
         this.year = year;
         this.type = type;
         this.color = color;
         this.price = price;
-        this.passenger = passenger;
+        this.passengerCapacity = passengerCapacity;
+    }
+
+    // Getter and Setter Methods
+    public String getName() {
+        return name;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getPassengerCapacity() {
+        return passengerCapacity;
+    }
+
+    // Setters methods
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setPassengerCapacity(int passengerCapacity) {
+        this.passengerCapacity = passengerCapacity;
     }
 
     public void vehicleName(String name) {
@@ -81,10 +134,15 @@ class Bus implements Vehicle {
         System.out.println("Gear Number : " + gear);
     }
 
-
     @Override
     public void carryPassenger(int passenger) {
         System.out.println("Passenger Number :" + passenger);
+        if (passenger <= passengerCapacity) {
+            System.out.println("Carrying " + passenger + " passengers.");
+        } else {
+            System.out.println(
+                    "Error : Cannot carry " + passenger + " passengers. Max capacity is " + passengerCapacity + ".");
+        }
     }
 
     public void modelName(String model) {
@@ -92,18 +150,23 @@ class Bus implements Vehicle {
     }
 }
 
+class Bus extends AbstractVehicle {
+    public Bus(String name, int year, String type, String color, double price, int passengerCapacity) {
+        super(name, year, type, color, price, passengerCapacity);
+    }
+}
 
-class MotorBike implements vehicle {
+class MotorBike implements Vehicle {
 
-    private String name;
-    private int year;
-    private String type;
-    private String color;
-    private double price;
-    private int passenger;
+    protected String name;
+    protected int year;
+    protected String type;
+    protected String color;
+    protected double price;
+    protected int passenger;
 
     // Constructors
-    public MotorBike(String name, int year, String type, String color, double price, int passenger){
+    public MotorBike(String name, int year, String type, String color, double price, int passenger) {
         this.name = name;
         this.year = year;
         this.type = type;
@@ -112,7 +175,6 @@ class MotorBike implements vehicle {
         this.passenger = passenger;
 
     }
-
 
     public void vehicleName(String name) {
         this.name = name;
@@ -168,8 +230,8 @@ class MotorBike implements vehicle {
 
 public class Ch_Abstraction_Interface_01 {
     public static void main(String[] args) {
-        vehicle bus = new Bus("Volvo", 2020, "Passenger Carrying", "White and Blue", 2140000.25000, 112);
-        vehicle bike = new MotorBike("Yamaha", 2022, "Sports", "Red", 150000.00, 2);
+        Vehicle bus = new Bus("Volvo", 2020, "Passenger Carrying", "White and Blue", 2140000.25000, 112);
+        Vehicle bike = new MotorBike("Yamaha", 2022, "Sports", "Red", 150000.00, 2);
 
         System.out.println("========== BUS ==========");
 
@@ -186,14 +248,16 @@ public class Ch_Abstraction_Interface_01 {
         bike.carryPassenger(2);
         bike.stop();
 
-      /*   System.out.println("\n========== BUS DETAILS ==========");
-        Bus buss = new Bus();
-        buss.vehicleName("Volvo");
-        buss.vehicleColor("White and Blue");
-        buss.vehicleLaunchYear(2020);
-        buss.modelName("Volvo XR100 Plus");
-        buss.vehicleType("Passenger Carrying");
-        buss.vehiclePrice(2140000.25000);
-        buss.vehiclePassenger(112); */
+        /*
+         * System.out.println("\n========== BUS DETAILS ==========");
+         * Bus buss = new Bus();
+         * buss.vehicleName("Volvo");
+         * buss.vehicleColor("White and Blue");
+         * buss.vehicleLaunchYear(2020);
+         * buss.modelName("Volvo XR100 Plus");
+         * buss.vehicleType("Passenger Carrying");
+         * buss.vehiclePrice(2140000.25000);
+         * buss.vehiclePassenger(112);
+         */
     }
 }
