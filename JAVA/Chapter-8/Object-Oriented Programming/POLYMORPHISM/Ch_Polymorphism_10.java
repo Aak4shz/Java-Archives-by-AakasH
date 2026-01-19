@@ -43,7 +43,7 @@ class CreditCardPayment extends Payment {
 
 }
 
-class UPIpayment extends Payment {
+class UPIPayment extends Payment {
 
   @Override
   void processPayment(double amount) {
@@ -92,10 +92,10 @@ public class Ch_Polymorphism_10 {
     processor.processPayment(creditCardPayment, 82405.45);
     System.out.println("-----------------------------------");
 
-    Payment upiPayment = new UPIpayment();
+    Payment upiPayment = new UPIPayment();
     processor.processPayment(upiPayment, 1500.50);
     System.out.println("-----------------------------------");
-    
+
     Payment cashPayment = new CashPayment();
     processor.processPayment(cashPayment, 2000.61);
     System.out.println("-----------------------------------");
