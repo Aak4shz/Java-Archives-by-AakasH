@@ -1,4 +1,4 @@
-// Demo: Public Access Modifier
+// ! : Public Access Modifier
 class PublicModifierDemo {
     
     // Public fields: accessible everywhere
