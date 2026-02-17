@@ -1,6 +1,6 @@
 // 1. Access Modifiers & Constructors
 
- //! Type 1 -> Private Modifier
+ //! Type 1 -> Private Access Modifier
 
 class MyEmployee {
     // Private variables: Cannot be accessed directly from outside this class
